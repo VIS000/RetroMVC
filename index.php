@@ -31,7 +31,7 @@ class IndexHandler
 	{
 		if(isset($this->_url[1]))
 		{
-			if(method_exists($this->controller, $this->_url[1]))
+			if(method_exists($this->_controller, $this->_url[1]))
 			{
 				$this->_controller->{$this->_url[1]}();
 			}
